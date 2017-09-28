@@ -1,0 +1,106 @@
+#!/usr/bin/python
+
+import ftplib
+
+import getopt
+import sys
+import argparse
+
+#Initialize argument parser
+parser = argparse.ArgumentParser(description="Read FTP storage covert channel.")
+parser.add_argument("-s", default="jeangourd.com",  help = "Server to get listing from")
+args = parser.parse_args()
+
+#Place IP of target FTP server here
+ftp = ftplib.FTP(args.s)
+ftp.login("anonymous", "")
+
+data = []
+
+#Places list contents of FTP server in data list
+ftp.dir(data.append)
+
+#Close connection
+ftp.quit()
+
+#We only want the first 10 characters of each line
+for i in range(len(data)):
+	data[i] = data[i][0:10]
+
+#7 bit binary
+ASCIIType = 7
+
+#Converts a list of file permissions into binary, then to plaintext
+#Hyphens are zeroes, everything else is a one
+def binaryDecode(fileList, ASCIIType):
+	#Define variables
+	binary = ""
+	plaintext = ""
+	for item in filelist:
+		#convert to binary
+		for char in item:
+			if char == "-":
+				binary += "0"
+			else:
+				binary += "1"
+	binaryList = [binary[i:i + ASCIIType] for i in range(0, len(binary), ASCIIType)]
+	for i in binaryList:
+		plaintext += chr(int(i, 2))
+	return plaintext
+	return plaintext
+
+
+
+def sevenBitDecode(flist):
+	newList = []
+	ASCIIType = 7
+	#Create a new list, each entry is a 2-item list: 
+	#[first 3 characters, last 7 chars]
+	for d in flist:
+		n = [d[:3],d[3:]] 
+		newList.append(n)
+	#Remove noise (entries containing letters in first 3 chars)
+	fixedlist = []
+	for i in range(len(newList)):
+		if newList[i][0] == ( "---" ):
+			fixedlist.append(newList[i][1])
+	#return fixedlist
+	#Now decode message: assume hyphens are 0, anything else is 1
+	binaryDecode
+	plaintext = ""
+	binary = ""
+	for item in fixedlist:
+		#convert to binary
+		for char in item:
+			if char == "-":
+				binary += "0"
+			else:
+				binary += "1"
+	binaryList = [binary[i:i + ASCIIType] for i in range(0, len(binary), ASCIIType)]
+	for i in binaryList:
+		plaintext += chr(int(i, 2))
+	return plaintext
+
+def tenBitDecode(flist):
+	#Define variables
+	ASCIIType = 7
+	binary = ""
+	plaintext = ""
+	#For every item...
+	for f in flist:
+		#search through chars...
+		for char in f:
+			#...if hyphen, it's zero, else it's one
+			if char == "-":
+				binary += "0"
+			else:
+				binary += "1"
+	binaryList = [binary[i:i + ASCIIType] for i in range(0, len(binary), ASCIIType)]
+	for char in binaryList:
+		plaintext += chr(int(char, 2))
+
+	return plaintext 
+
+	
+print sevenBitDecode(data)
+print tenBitDecode(data)

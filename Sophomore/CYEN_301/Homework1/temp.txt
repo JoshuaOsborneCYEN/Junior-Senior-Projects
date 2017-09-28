@@ -1,0 +1,10 @@
+ """
+  35 
+   36 args = str(sys.argv[1:])
+    37 print args
+     38 optlist, args = getopt.getopt(args, 'd:e')
+      39 
+       40 print optlist
+        41 print args
+	 42 """
+

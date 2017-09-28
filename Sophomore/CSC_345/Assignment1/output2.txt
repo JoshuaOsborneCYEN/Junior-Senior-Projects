@@ -1,0 +1,7 @@
+total 44
+-rwxr-xr-x 1 root      root      18832 Apr 16 14:40 a.out
+-rw-r--r-- 1 joshua-oz joshua-oz  4888 Apr 16 14:31 Assignment1TechShell.c
+-rw-r--r-- 1 joshua-oz joshua-oz  4926 Apr 16 14:40 Assignment1TechShellMod.c
+-rw-r--r-- 1 joshua-oz joshua-oz  3118 Apr 15 20:59 HashTable2.h
+-rw-r--r-- 1 root      root          0 Apr 16 14:41 output2.txt
+-rw-r--r-- 1 root      root        348 Apr 16 14:41 output.txt

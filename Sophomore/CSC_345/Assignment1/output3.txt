@@ -1,0 +1,15 @@
+total 104
+-rwxr-xr-x 1 joshua-oz joshua-oz 19016 Apr 20 17:47 a.out
+-rw-r--r-- 1 joshua-oz joshua-oz  8375 Apr 17 17:51 Assignment1TechShell2Mod.c
+-rw-r--r-- 1 joshua-oz joshua-oz  8958 Apr 19 18:07 Assignment1TechShell3Mod.c
+-rw-r--r-- 1 joshua-oz joshua-oz  7460 Apr 19 22:32 Assignment1TechShell4Mod.c
+-rw-r--r-- 1 joshua-oz joshua-oz  7884 Apr 20 17:47 Assignment1TechShell5Mod.c
+-rw-r--r-- 1 joshua-oz joshua-oz  4888 Apr 16 14:31 Assignment1TechShell.c
+-rw-r--r-- 1 joshua-oz joshua-oz  8540 Apr 17 18:16 Assignment1TechShellMod.c
+-rw-r--r-- 1 joshua-oz joshua-oz  3152 Apr 17 19:57 HashTable2.h
+-rw-r--r-- 1 root      root        412 Apr 16 14:41 output2.txt
+-rw-r--r-- 1 joshua-oz joshua-oz   232 Apr 20 17:45 output3
+-rw-r--r-- 1 joshua-oz joshua-oz     0 Apr 20 17:47 output3.txt
+-rw-r--r-- 1 joshua-oz joshua-oz  1175 Apr 20 17:46 output4.txt
+-rw-r--r-- 1 root      root        145 Apr 19 17:44 output.txt
+-rw-r--r-- 1 joshua-oz joshua-oz  1071 Apr 19 18:30 pipesample.c

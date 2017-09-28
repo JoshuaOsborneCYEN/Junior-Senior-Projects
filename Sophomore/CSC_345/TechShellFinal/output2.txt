@@ -1,0 +1,4 @@
+a.out
+Assignment1TechShell6Mod.c
+HashTable3.h
+output2.txt

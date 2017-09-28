@@ -1,0 +1,17 @@
+redirect with pipes
+ check for all redirect symbols first 
+ -then look for pipe
+
+ You are going to extend a previous very simple techShell from the CSC222 class. You can write this program in either C or C++. The executable should be called techShell and it should compile with a Makefile. (Specific submission instructions will be provided; you will submit a tar-ball via email to my grader and cc to me. Remember, you must include a Makefile (a sample one is provided) that compiles the assignment with the default target all. The program must compile to the executable name given. You should also include the following:
+
+ 1. A README file containing:
+ (a) Your name and your partner
+ (b) If you have not fully implemented all functionality then list the parts that work (and how to test them if it is not obvious) so that you can be sure to receive credit for the parts you do have working.
+ 2. All the source _les needed to compile, run and test your code (Makefile, .c or c++ _les, optional test scripts). Do not submit object or executable _les.
+ 3. Output from your testing of your shell program. Make sure to demonstrate:
+ (a) That simple Unix commands still work & handles built-in commands (cd, pwd, exit).
+ (b) That piping works.
+ (c) I/O redirection
+ (d) That supports new built-in commands “set”  and “list” that will allow user to set a shell variable and its value as well as list all variables with their values
+ (d) Error Condition
+

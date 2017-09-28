@@ -1,0 +1,11 @@
+a.out
+Assignment1TechShell6Mod.c
+HashTable3.h
+ls.out
+output2.txt
+output.txt
+README.txt
+TechShell
+TechShellFinal.c
+todo.txt
+"more words"
